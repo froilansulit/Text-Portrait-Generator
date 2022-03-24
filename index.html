@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text Portrait Generator</title>
+  <meta name="description"
+    content="Convert text to image online in just a few minutes. You can create text image for free. Make a text portrait online, just upload your picture.">
+  <meta name="author" content="Froilan Sulit">
+  <meta name="copyright" content="Copyright owner">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="icon" href="pika.png">
+</head>
+
+<body>
+  <div id="MyTitle" class="container mt-5">
+    <h1 class="text-center">Portrait Text Generator</h1>
+  </div>
+  <div class="container col-md-6" id="container" style="margin-top: 5%">
+
+    <div class="form-group">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="image" accept="image/*" class="center" multiple="false">
+        <label class="custom-file-label" for="customFile">Choose Image</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control" id="textLyrics" rows="10" placeholder="Enter Text"></textarea>
+    </div>
+
+    <br />
+    <label id="label" class="d-block text-center" for="repeat">Repeat text:
+    </label>
+
+    <div class="form-group">
+
+      <input class="form-control d-block ml-auto mr-auto" type="number" value="25" min="0" style="width: 5em;"
+        id="repeat" /><br />
+
+    </div>
+    <div class="container text-center">
+      <input id="generate" class="btn btn-outline-primary col-md-6" type="button" value="Generate" />
+    </div>
+  </div>
+  <div>
+    <a href="" id="backBTN" class="btn btn-outline-primary m-2 invisible">Back</a>
+  </div>
+  <p id="text"></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
