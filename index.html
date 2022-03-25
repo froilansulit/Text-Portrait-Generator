@@ -17,11 +17,14 @@
 </head>
 
 <body>
+  <!-- body start here   -->
   <div id="MyTitle" class="container mt-5">
     <h1 class="text-center">Portrait Text Generator</h1>
   </div>
   <div class="container col-md-6" id="container" style="margin-top: 5%">
 
+<!-- image upload form start here  -->
+    
     <div class="form-group">
       <div class="custom-file">
         <input type="file" class="custom-file-input" id="image" accept="image/*" class="center" multiple="false">
@@ -29,6 +32,10 @@
       </div>
     </div>
 
+    <!-- image upload form end here   -->
+    
+    <!--  textarea start here    -->
+    
     <div class="form-group">
       <textarea class="form-control" id="textLyrics" rows="10" placeholder="Enter Text"></textarea>
     </div>
@@ -36,22 +43,33 @@
     <br />
     <label id="label" class="d-block text-center" for="repeat">Repeat text:
     </label>
+    
+    <!--  textarea start here    -->
 
     <div class="form-group">
 
       <input class="form-control d-block ml-auto mr-auto" type="number" value="25" min="0" style="width: 5em;"
         id="repeat" /><br />
 
+<!--    generate button start here    -->
+      
     </div>
     <div class="container text-center">
       <input id="generate" class="btn btn-outline-primary col-md-6" type="button" value="Generate" />
     </div>
   </div>
   <div>
+    
+  
+<!--    generate button end here    -->
+    
+<!--   body end here   -->
     <a href="" id="backBTN" class="btn btn-outline-primary m-2 invisible">Back</a>
   </div>
+<!--  dislay text here after generated  -->
   <p id="text"></p>
 
+<!--  for bootstrap script links  -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -61,6 +79,8 @@
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+  <!--  custom scripts  -->
+  
   <script src="script.js"></script>
   
 </body>
